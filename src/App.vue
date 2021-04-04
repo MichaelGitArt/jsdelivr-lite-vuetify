@@ -1,28 +1,28 @@
 <template>
   <VApp>
-    <VAppBar app color="primary">
-      <VContainer>
-        <TheSearch />
-      </VContainer>
-    </VAppBar>
+    <TheHeader />
 
     <VMain>
-      <VContainer class="pt-6">
+      <VContainer class="py-6">
         <PackagePage />
       </VContainer>
     </VMain>
+
+    <TheFooter />
   </VApp>
 </template>
 
 <script>
-import TheSearch from './components/TheSearch';
+import TheHeader from './components/Interface/TheHeader';
+import TheFooter from './components/Interface/TheFooter';
 import PackagePage from './components/Package/PackagePage';
 
 export default {
   name: 'App',
 
   components: {
-    TheSearch,
+    TheHeader,
+    TheFooter,
     PackagePage,
   },
 };
