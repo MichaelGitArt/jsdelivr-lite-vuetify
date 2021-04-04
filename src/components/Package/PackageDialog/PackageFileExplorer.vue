@@ -56,6 +56,13 @@ export default {
     },
   },
 
+  watch: {
+    structure() {
+      this.path = [];
+      this.selection = [];
+    },
+  },
+
   computed: {
     itemPath() {
       if (this.path.length) {

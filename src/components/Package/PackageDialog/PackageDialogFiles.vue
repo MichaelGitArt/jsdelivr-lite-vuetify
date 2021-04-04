@@ -63,6 +63,7 @@ export default {
   methods: {
     onChnageVersion(version) {
       this.fileLoading = true;
+      this.selection = [];
 
       this.$store.dispatch('package/single/changeVersion', version).then(() => {
         this.version = version;
