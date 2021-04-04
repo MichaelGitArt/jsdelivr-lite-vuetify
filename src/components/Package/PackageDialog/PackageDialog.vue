@@ -1,6 +1,6 @@
 <template>
   <VDialog v-model="state" width="700">
-    <VCard class="px-4 py-6">
+    <VCard class="px-4 py-md-6 py-4">
       <PackageDialogContent v-if="currPackage" />
       <VLayout v-else align-center flex-column pa-8>
         <VProgressCircular :size="50" color="primary" indeterminate />

@@ -7,8 +7,10 @@
         </div>
       </VExpansionPanelHeader>
       <VExpansionPanelContent>
-        <VListItem v-for="item in selection" :key="item">
-          {{ baseUrl + basePath + item }}
+        <VListItem v-for="item in selection" :key="item" class="px-0">
+          <div class="item d-flex">
+            {{ baseUrl + basePath + item }}
+          </div>
 
           <CopyBtn class="ml-auto" @copy="onCopy(item)" />
         </VListItem>
@@ -49,3 +51,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.item {
+  overflow: auto;
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+</style>

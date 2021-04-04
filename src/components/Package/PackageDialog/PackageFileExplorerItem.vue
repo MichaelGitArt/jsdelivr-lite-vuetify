@@ -97,6 +97,7 @@ export default {
 <style lang="scss" scoped>
 .item-path {
   overflow: auto;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
+  white-space: nowrap;
 }
 </style>

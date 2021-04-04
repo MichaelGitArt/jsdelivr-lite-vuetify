@@ -5,7 +5,7 @@
         mdi-arrow-left-bold
       </VIcon>
 
-      <div class="d-flex">
+      <div class="d-flex back-button-path">
         <span class="text--disabled">
           {{ basePath }}
         </span>
@@ -112,5 +112,11 @@ export default {
 .file-list {
   height: 200px;
   overflow: auto;
+}
+
+.back-button-path {
+  overflow: auto;
+  padding-bottom: 2px;
+  white-space: nowrap;
 }
 </style>
